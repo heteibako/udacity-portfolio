@@ -180,7 +180,7 @@ span {
 
 @media screen and (max-width: 480px) {
   body {
-    max-width: 100%;
+    width: 100%;
     margin: 0 auto;
   }
   header {
@@ -191,7 +191,7 @@ span {
     margin-top: 50px;
   }
   .designer-name {
-    font-size: 16px;
+    font-size: 14px;
     margin: 5px 5px;
   }
   .designer-desc {
@@ -205,11 +205,19 @@ span {
   .portfolio-item-wrapper:not(:last-child) {
     margin-right: 0;
   }
+  .social {
+    font-size: 10px;
+    margin: 0 5px;
+  }
+  .copyright-text {
+    font-size: 9px;
+    margin: 5px 0;
+  }
 }
 
 @media screen and (max-width: 320px) {
   body {
-    max-width: 100%;
+    width: 100%;
     margin: 0 auto;
   }
   header {
@@ -231,7 +239,7 @@ span {
     margin-right: 0;
   }
   .social {
-    font-size: 12px;
+    font-size: 10px;
     margin: 0 5px;
   }
   .copyright-text {
