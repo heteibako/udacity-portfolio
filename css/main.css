@@ -180,7 +180,7 @@ span {
 
 @media screen and (max-width: 480px) {
   body {
-    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
   }
   header {
@@ -217,14 +217,14 @@ span {
 
 @media screen and (max-width: 320px) {
   body {
-    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
   }
   header {
     height: 80px;
   }
   .designer-name {
-    font-size: 16px;
+    font-size: 12px;
     margin: 5px 5px;
   }
   .designer-desc {
