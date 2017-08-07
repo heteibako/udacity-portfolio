@@ -178,7 +178,19 @@ span {
 
 /* 7. - MEDIA QUERIES */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 570px) and (orientation: landscape) {
+
+  .designer-name {
+    font-size: 14px;
+    margin: 5px 5px;
+  }
+  .designer-desc {
+    font-size: 10px;
+    margin: 5px 5px;
+  }
+}
+
+@media screen and (max-width: 681px) {
   body {
     max-width: 100%;
     margin: 0 auto;
@@ -215,7 +227,9 @@ span {
   }
 }
 
-@media screen and (max-width: 320px) {
+
+
+@media screen and (max-width: 320px) and (orientation: landscape) {
   body {
     max-width: 100%;
     margin: 0 auto;
