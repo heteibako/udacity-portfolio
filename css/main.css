@@ -1,0 +1,241 @@
+/*
+
+CONTENTS
+-------------------
+0. - GLOBAL STYLES
+1. - HEADER
+2. - SLIDER
+3. - PORTFOLIO
+4. - FOOTER
+5. - HELPER CLASSES
+6. - BUTTONS
+7. - MEDIA QUERIES
+*/
+
+
+/* 0. - GLOBAL STYLES*/
+
+* {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  margin-bottom: 15px;
+  border-top: 1px solid #ccc;
+}
+
+body {
+  width: 85%;
+  margin: 0 auto;
+}
+
+
+/*1. - HEADER*/
+
+.logo, .site-name {
+  width: 50%;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.site-name {
+  text-align: right;
+}
+
+header {
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  width: 70px;
+}
+
+
+/* 2. - SLIDER */
+
+.slider img {
+  width: 100%;
+}
+
+
+/* 3. - PORTFOLIO */
+
+.portfolio-img {
+  width: 100%;
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.portfolio-item-desc {
+  margin-bottom: 35px;
+}
+
+.portfolio-item-wrapper {
+  width: 25%;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.portfolio-item-wrapper:not(:last-child) {
+  margin-right: 15px;
+}
+
+.portfolio-section-title {
+  margin: 15px 5px;
+  color: #7d97ad;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+
+/* 4. - FOOTER */
+
+footer {
+  background-color: #2d3c49;
+  height: 50px;
+  display: flex;
+  color: #7d97ad;
+  padding: 15px;
+}
+
+.copyright-text {
+  font-size: 12px;
+}
+
+span {
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+.footer-left, .footer-right {
+  width: 50%;
+}
+
+
+/* 5. - HELPER CLASSES */
+
+.my-1 {
+  margin: 1em 0 .3em 0;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.margin-top {
+  margin-top: 3em;
+}
+
+.dark-text {
+  color: #2d3c49;
+}
+
+
+/* 6. - BUTTONS */
+
+.btn {
+  background-color: #02b3e4;
+  padding: 10px 15px;
+  border-radius: 25px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  transition: .3s;
+  font-size: .875em;
+}
+
+.btn:hover {
+  background-color: #7d97ad;
+}
+
+.social {
+  color: #7d97ad;
+  transition: .3s;
+}
+
+.social:hover {
+  color: #02b3e4;
+}
+
+
+/* 7. - MEDIA QUERIES */
+
+@media screen and (max-width: 480px) {
+  body {
+    width: 100%;
+    margin: 0 auto;
+  }
+  header {
+    height: 80px;
+  }
+  .portfolio-item-wrapper:not(:first-child) {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .designer-name {
+    font-size: 18px;
+    margin: 5px 5px;
+  }
+  .designer-desc {
+    font-size: 10px;
+    margin: 5px 5px;
+  }
+  .logo img {
+    width: 50px;
+    margin-left: 5px;
+  }
+  .portfolio-item-wrapper:not(:last-child) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  body {
+    width: 100%;
+    margin: 0 auto;
+  }
+  header {
+    height: 80px;
+  }
+  .designer-name {
+    font-size: 16px;
+    margin: 5px 5px;
+  }
+  .designer-desc {
+    font-size: 10px;
+    margin: 5px 5px;
+  }
+  .logo img {
+    width: 50px;
+    margin-left: 5px;
+  }
+  .portfolio-item-wrapper:not(:last-child) {
+    margin-right: 0;
+  }
+  .social {
+    font-size: 12px;
+    margin: 0 5px;
+  }
+  .copyright-text {
+    font-size: 9px;
+    margin: 5px 0;
+  }
+}
