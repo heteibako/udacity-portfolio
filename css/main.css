@@ -33,7 +33,7 @@ hr {
 }
 
 body {
-  width: 85%;
+  max-width: 85%;
   margin: 0 auto;
 }
 
@@ -64,7 +64,7 @@ header {
 /* 2. - SLIDER */
 
 .slider img {
-  width: 100%;
+  max-width: 100%;
 }
 
 
