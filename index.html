@@ -6,16 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Szabi Hetei Bako | Junior Frontend Developer</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
   <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" href="css/main.css">
+
 </head>
 
 <body>
   <!-- HEADER START -->
-  <header>
+  <header id="header">
     <div class="logo animated fadeInUp">
       <img class="logo-img" src="img/logo.png" alt="heteibako logo">
     </div>
@@ -29,7 +31,7 @@
   <hr>
 
   <section class="slider animated fadeIn">
-    <img src="img/header.jpg" alt="computer on the table">
+    <img src="img/header.jpg" alt="computer on the table" id="photo">
   </section>
   <!-- SLIDER END -->
   <!-- PORTFOLIO START -->
@@ -46,7 +48,7 @@
       </div>
     </article>
 
-    <article class="portfolio-item-wrapper animated fadeInDown">
+    <article id="tween" class="portfolio-item-wrapper animated fadeInDown">
       <div class="portfolio-item">
         <img src="img/boat.jpg" alt="Boat sails in sunset" class="portfolio-img">
         <h3 class="portfolio-item-title my-1">Sail with us</h3>
@@ -104,6 +106,7 @@
     </div>
   </footer>
   <!-- FOOTER END -->
+  <script src="js/app.js"></script>
 </body>
 
 </html>
